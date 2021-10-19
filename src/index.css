@@ -6,8 +6,37 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+body::-webkit-scrollbar{
+  width: 15px;
+}
+body::-webkit-scrollbar-track {
+  background-color: #B48C52;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: #354435;
+  border-radius:45px;
 
+
+
+
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "Brasika";
+  src: local("Brasika"),
+   url("./Fonts/fonteBrasika/Brasika.otf") format("truetype");
+  font-weight: bold;
+  }
+
+
+  @font-face {
+    font-family: "Comfortaa";
+    src: local("Comfortaa-Regular"),
+     url("./Fonts/comfortaa/Comfortaa-Regular.ttf") format("truetype");
+    }
+
+  
