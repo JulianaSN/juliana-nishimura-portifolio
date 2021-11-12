@@ -1,42 +1,38 @@
+
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background-color: var(--background);
+    color: var(--title-colo);
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
-body::-webkit-scrollbar{
-  width: 15px;
+
+body::-webkit-scrollbar {
+    width: 15px;
 }
+
 body::-webkit-scrollbar-track {
-  background-color: #B48C52;
+    background-color: #B48C52;
 }
-body::-webkit-scrollbar-thumb{
-  background-color: #354435;
-  border-radius:45px;
 
-
-
-
+body::-webkit-scrollbar-thumb {
+    background-color: #354435;
+    border-radius: 45px;
 }
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 @font-face {
-  font-family: "Brasika";
-  src: local("Brasika"),
-   url("./Fonts/fonteBrasika/Brasika.otf") format("truetype");
-  font-weight: bold;
-  }
+    font-family: "Brasika";
+    src: local("Brasika"), url("./Fonts/fonteBrasika/Brasika.otf") format("truetype");
+    font-weight: bold;
+}
 
-
-  @font-face {
+@font-face {
     font-family: "Comfortaa";
-    src: local("Comfortaa-Regular"),
-     url("./Fonts/comfortaa/Comfortaa-Regular.ttf") format("truetype");
-    }
-
-  
+    src: local("Comfortaa-Regular"), url("./Fonts/comfortaa/Comfortaa-Regular.ttf") format("truetype");
+}
