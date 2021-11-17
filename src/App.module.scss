@@ -252,56 +252,122 @@
             }
         }
 
-        .AppBody {
-            .workCards {
-                display: flex;
-                justify-content: center;
-                min-width: calc(100% - 30px);
-                min-height: 100vh;
-                background-color: #F1B65E;
+        .workCards {
+            display: flex;
+            justify-content: center;
+            min-width: calc(100% - 30px);
+            min-height: 100vh;
+            background-color: #F1B65E;
 
-                .animationCards {
-                    width: 280px;
-                    margin: 30px;
-                    height: 600px;
-                    position: relative;
+            .animationCards {
+                width: 280px;
+                margin: 30px;
+                height: 600px;
+                position: relative;
 
-                    .imgWorkCards {
-                        /* background-color: #354435; */
-                        border: 1px solid black;
-                        width: 100%;
-                        border-top-left-radius: 149px;
-                        border-top-right-radius: 149px;
-                        height: 100%;
+                .imgWorkCards {
+                    /* background-color: #354435; */
+                    border: 1px solid black;
+                    width: 100%;
+                    border-top-left-radius: 149px;
+                    border-top-right-radius: 149px;
+                    height: 100%;
 
-                        &:hover {
-                            &:local {
-                                animation-name: [titleAnimation];
-                                animation-duration: 2s;
-                                cursor: pointer;
-                            }
+                    &:hover {
+                        &:local {
+                            animation-name: [titleAnimation];
+                            animation-duration: 2s;
+                            cursor: pointer;
                         }
                     }
-
-                    .titles {
-                        /* background-color: #F1B65E; */
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        font-family: 'Brasika';
-                        font-size: 25px;
-                        width: 310px;
-                        height: 4em;
-                        position: absolute;
-                        border-radius: 45px;
-
-                        /* border:1px solid black; */
-                        /* background-color: #354435; */
-                        bottom: -4px;
-                        right: -15px;
-                        left: -15px;
-                    }
                 }
+
+                .titles {
+                    /* background-color: #F1B65E; */
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: 'Brasika';
+                    font-size: 25px;
+                    width: 310px;
+                    height: 4em;
+                    position: absolute;
+                    border-radius: 45px;
+
+                    /* border:1px solid black; */
+                    /* background-color: #354435; */
+                    bottom: -4px;
+                    right: -15px;
+                    left: -15px;
+                }
+            }
+        }
+
+        .AppBody {
+            
+
+            .imgLayouts {
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                margin-bottom:30px;
+
+                .principalName {
+                    max-width: 700px !important;
+                }
+
+                .logos {
+                    display: flex;
+                    flex-direction: column;
+                    width: 460px;
+                }
+
+                .titleLayout {
+                    font-size: 6em;
+                    font-family: 'Brasika';
+                    position: absolute;
+                    color: white;
+                    left: 110px
+                ;
+               
+                }
+            }
+
+            .descricaoCliente {
+                margin: 120px;
+                font-weight: normal;
+                font-size: 25px;
+                color: #876532;
+                background-color: #f1b65e;
+
+                // position: absolute;
+                bottom: -50px;
+            }
+
+            
+            
+            img {
+                width: 60vw;
+                height: 980ṕx;
+            }
+
+            .containerIdVisual {
+                border: 2px solid black;
+                border-top-left-radius: 600px;
+                border-top-right-radius: 600px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                // flex-direction: column;
+                width: 1000px;
+                height: 100vh;
+                padding: 50px;
+                position: relative;
+                padding-top: 0;
+                margin-top: 120px;
+
+               
             }
 
             .carouselTemplate {
@@ -313,65 +379,9 @@
                 justify-content: center;
                 flex-direction: column;
 
-                .titleLayout {
-                    font-size: 6em;
-
-                    // position: absolute;
-                    // right: -300px;
-                    font-family: 'Brasika';
-
-                    // transform: rotate(90deg);
                
-                }
 
-                img {
-                    width: 60vw;
-                    height: 980ṕx;
-                }
-
-                .containerIdVisual {
-                    border: 2px solid black;
-                    border-top-left-radius: 600px;
-                    border-top-right-radius: 600px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-
-                    // flex-direction: column;
-                    width: 1000px;
-                    height: 100vh;
-                    padding: 50px;
-                    position: relative;
-                    padding-top: 0;
-                    margin-top: 120px;
-
-                    .imgLayouts {
-                        display: flex;
-                        align-items: flex-end;
-                        justify-content: flex-end;
-
-                        .principalName {
-                            width: 820px !important;
-                        }
-
-                        .logos {
-                            display: flex;
-                            flex-direction: column;
-                            width: 460px;
-                        }
-                    }
-
-                    .descricaoCliente {
-                        margin: 120px;
-                        font-weight: normal;
-                        font-size: 25px;
-                        color: #876532;
-                        background-color: #f1b65e;
-
-                        // position: absolute;
-                        bottom: -50px;
-                    }
-                }
+                
             }
         }
     }

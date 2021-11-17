@@ -2,9 +2,12 @@ import React from 'react';
 import './App.module.scss';
 import { Carousel } from 'bootstrap';
 import ContainerClient from './components/ContainerClients';
-import idVisualGiRosaName from './img/ident-visual/giRosa/giRosaNameWhite.png';
+import cittaMobi from './img/layouts/cittaMobi.jpg';
+import menuGyudon from './img/layouts/gyudon-co.jpg';
 import cadernoGiRosa from './img/ident-visual/giRosa/05J_08.jpg';
 import logoArtByNog from './img/ident-visual/artbyNog/artbyNogCartao.jpg';
+import arte1 from './img/ilustras/arte3.jpg';
+import arte2 from './img/ilustras/old-man-5.jpg';
 import idVisualNishi from './img/ident-visual/nishiDesign/nishiDesignNameWhite.png';
 import capaGyudon from './img/ident-visual/gyudon/capa.jpg'; 
 import cadernoNishiDesign from './img/ident-visual/nishiDesign/nishiDesignCaderno.jpg';
@@ -22,7 +25,7 @@ function App() {
   function navigateJobPage() {
 
     $('html,body').animate({
-      scrollTop: $("#jobs").offset().top
+      scrollTop: $(".AppBody").offset().top
     },
       'slow');
 
@@ -81,36 +84,13 @@ function App() {
 
       <body className="AppBody">
 
-        <div id="jobs" className="workCards">
-          <div className="animationCards">
-            <div className="imgWorkCards"></div>
-            <div className="titles">Layouts</div>
-          </div>
-          <div className="animationCards">
-            <div className="imgWorkCards"></div>
-            <div className="titles">Identidade Visual</div>
-          </div>
-          <div className="animationCards">
-            <div className="imgWorkCards"></div>
-            <div className="titles">Animação</div>
-          </div>
-          <div className="animationCards">
-            <div className="imgWorkCards"></div>
-            <div className="titles">Ilustração</div>
-
-          </div>
-
-        </div>
-
+        
 
         <ContainerClient
           title="Layouts"
-          imagem1={cadernoGiRosa}
+          imagem1={cittaMobi}
           descricaoCliente1="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-          imagem2={logoArtByNog}
-          descricaoCliente2="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-          imagem3={cadernoNishiDesign}
-          descricaoCliente3="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+         
         
         />
 
@@ -119,30 +99,18 @@ function App() {
           title="Identidade Visual"
           imagem1={cadernoGiRosa}
           descricaoCliente1="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-          imagem2={logoArtByNog}
+          imagem2={cadernoNishiDesign}
           descricaoCliente2="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-          imagem3={cadernoNishiDesign}
-          descricaoCliente3="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-          imagem4={capaGyudon}
-          descricaoCliente4="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          
        />
-        <ContainerClient
-          title="Animação"
-          imagem1={cadernoGiRosa}
-          descricaoCliente1="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-          imagem2={logoArtByNog}
-          descricaoCliente2="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-          imagem3={cadernoNishiDesign}
-          descricaoCliente3="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        />
+      
         <ContainerClient
           title="Ilustração"
-          imagem1={cadernoGiRosa}
+          imagem1={arte2}
           descricaoCliente1="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-          imagem2={logoArtByNog}
+          imagem2={arte1}
           descricaoCliente2="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-          imagem3={cadernoNishiDesign}
-          descricaoCliente3="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          
         />
 
         
